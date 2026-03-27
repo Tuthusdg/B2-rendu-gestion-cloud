@@ -1,0 +1,17 @@
+services:
+  meow:
+    build: . 
+    container_name: meow_app
+    ports:
+      - "8000:8888"
+    environment:
+      REDIS_HOST: db 
+    depends_on:
+      - db      
+      
+  db:
+    image: redis:alpine
+    container_name: redis_db
+    restart: unless-stopped
+
+

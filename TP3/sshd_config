@@ -1,0 +1,13 @@
+Include /etc/ssh/sshd_config.d/*.conf
+Port 2222
+LogLevel VERBOSE
+PermitRootLogin no
+MaxAuthTries 3
+AuthorizedKeysFile      .ssh/authorized_keys
+PasswordAuthentication no
+UsePAM no
+
+AllowAgentForwarding no
+ClientAliveInterval 0
+ClientAliveCountMax 2
+Subsystem       sftp    /usr/libexec/openssh/sftp-server

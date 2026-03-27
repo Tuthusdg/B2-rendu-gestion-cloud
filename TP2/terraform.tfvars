@@ -1,0 +1,8 @@
+subscription_id = "C'est mort je met pas mes secrets"
+client_id       = "C'est mort je met pas mes secrets"
+client_secret   = "C'est mort je met pas mes secrets"
+tenant_id       = "C'est mort je met pas mes secrets"
+resource_group_name = "TP3.A"
+admin_username = "maybelater"
+public_key_path = "/home/maybelater/.ssh/cloud_tp2.pub"
+location = "denmarkeast"
